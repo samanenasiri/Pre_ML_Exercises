@@ -4,14 +4,14 @@ def my_zip(*n) :
     for i in n:
         if len(i) < min_len:
             min_len = len(i)   
-    count=0
+    index=0
     list1=[]
-    while count<min_len:
-        my_list=[]
+    while index<min_len:
+        list2=[]
         for i in n:
-            my_list.append(i[count])
-        list1.append(my_list)    
-        count+=1 
+            list2.append(i[index])    
+        list1.append(list2)    
+        index+=1 
     return list1              
 a=[1,2,3,4,5,6]
 b=(7,8,9)
