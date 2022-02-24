@@ -1,3 +1,8 @@
+a=[1,2,3,4,5,6]
+b=(7,8,9)
+c=[10,11]
+d=(12,13,14,15,16)
+
 
 def my_zip(*n) :
     min_len= len(n[0])
@@ -13,9 +18,4 @@ def my_zip(*n) :
         list1.append(list2)    
         index+=1 
     return list1              
-a=[1,2,3,4,5,6]
-b=(7,8,9)
-c=[10,11]
-d=(12,13,14,15,16)
-
 print(my_zip(a,b,c,d))
